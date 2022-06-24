@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emancipa</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <ul>
+               <li><a href="#">Início</a></li>
+               <li><a href="#">Sobre o EMANCIPA</a></li>
+               <li><a href="#">Grupos de Estudo</a></li>
+               <li><a href="#">Pesquisas</a></li>
+               <li><a href="#">Membros</a></li>
+           </ul>
+        </nav>
+        <div class="div-logos">
+            <img src="./logos.png">
+        </div>
+        <div class="container-div-titulo">
+            <div class="div-titulo">
+                <h1>Grupo de Pesquisa Interinstitucional Trabalho, Ontologia, Formação e Emancipação Humana</h1>
+            </div>
+        </div>
+
+        <div class="w3-content w3-section" style="max-width:1200px">
+            <img class="mySlides" src="./banner-01.png" style="width:100%">
+            <img class="mySlides" src="./banner-02.png" style="width:100%">
+            <img class="mySlides" src="./banner-03.png" style="width:100%">
+        </div>
+          
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+          }
+        </script>
+
+    </header>
+
+    <main>
+        <div class="container-geral">
+            <div class="lado" id="container-esquerdo">
+                <h3>III Escola Sertaneja de Marxismo</h3>
+                <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></p>
+                <h3>Curso de extensão</h3>
+                <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></p>
+                <h3>Mini curso método marxista e pesquisa em educação</h3>
+                <p><a href="#">Link aqui</a></p>
+                <p><a href="#">Link aqui</a></p>
+                <p><a href="#">Link aqui</a></p>
+                <p><a href="#">Link aqui</a></p>
+            </div>
+            <div class="lado" id="container-direito">
+                
+                <div class="container-menor">
+                    <div class="lado-direito" id="lado-direito-img">
+                        <img src="./Gianna.png">
+                    </div>
+                    <div class="lado-direito" id="lado-direito-txt">
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur omnis quia reprehenderit voluptates? Magni velit tempore cupiditate in officiis quaerat reprehenderit provident optio magnam, sit qui perferendis, natus ipsa.</p>
+                    </div>
+                </div>
+
+                <div class="container-menor">
+                    <div class="lado-direito" id="lado-direito-img">
+                        <img src="./manu.png">
+                    </div>
+                    <div class="lado-direito" id="lado-direito-txt">
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur omnis quia reprehenderit voluptates? Magni velit tempore cupiditate in officiis quaerat reprehenderit provident optio magnam, sit qui perferendis, natus ipsa.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
