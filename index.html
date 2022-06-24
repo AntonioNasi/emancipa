@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emancipa</title>
+
+    
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#slider').load("./slider.html");
+        });
+    </script>
+    
 </head>
 <body>
     <header>
@@ -28,28 +42,9 @@
             </div>
         </div>
 
-        <div class="w3-content w3-section" style="max-width:1200px">
-            <img class="mySlides" src="./banner-01.png" style="width:100%">
-            <img class="mySlides" src="./banner-02.png" style="width:100%">
-            <img class="mySlides" src="./banner-03.png" style="width:100%">
+        <div class="slider" id="slider">
+
         </div>
-          
-        <script>
-          var myIndex = 0;
-          carousel();
-          
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 4000); // Change image every 2 seconds
-          }
-        </script>
 
     </header>
 
@@ -69,23 +64,14 @@
             <div class="lado" id="container-direito">
                 
                 <div class="container-menor">
-                    <div class="lado-direito" id="lado-direito-img">
-                        <img src="./Gianna.png">
-                    </div>
-                    <div class="lado-direito" id="lado-direito-txt">
-                        <h1>Lorem ipsum dolor sit amet</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur omnis quia reprehenderit voluptates? Magni velit tempore cupiditate in officiis quaerat reprehenderit provident optio magnam, sit qui perferendis, natus ipsa.</p>
-                    </div>
-                </div>
-
-                <div class="container-menor">
-                    <div class="lado-direito" id="lado-direito-img">
-                        <img src="./manu.png">
-                    </div>
-                    <div class="lado-direito" id="lado-direito-txt">
-                        <h1>Lorem ipsum dolor sit amet</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur omnis quia reprehenderit voluptates? Magni velit tempore cupiditate in officiis quaerat reprehenderit provident optio magnam, sit qui perferendis, natus ipsa.</p>
-                    </div>
+                    <figure>
+                        <img src="https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/11/revolucao-russa-o-que-foi-historia-sistema-czarista-e-governo-provisorio.jpg" alt="forabolsonaro">
+                    </figure>
+                    <h1>Conheça o EMANCIPA</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum et veniam autem quisquam consequuntur recusandae amet tempora, fugiat vero eos culpa, at odit ab ipsam laboriosam ducimus! Praesentium, maiores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum et veniam autem quisquam consequuntur recusandae amet tempora, fugiat vero eos culpa, at odit ab ipsam laboriosam ducimus! Praesentium, maiores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum et veniam autem quisquam consequuntur recusandae amet tempora, fugiat vero eos culpa, at odit ab ipsam laboriosam ducimus! Praesentium, maiores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum et veniam autem quisquam consequuntur recusandae amet tempora, fugiat vero eos culpa, at odit ab ipsam laboriosam ducimus! Praesentium, maiores.</p>
                 </div>
 
             </div>
